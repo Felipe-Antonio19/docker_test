@@ -10,28 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-    # Step 1: checkout the code from GitHub
     - name: Checkout code
-    uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
-    # Step 2: Set up Node.js
     - name: Set up Node.js
-    uses: actions/setup-node@v3
-    with:
-      node-version: '16'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
 
-    # Step 3: Install dependencies
     - name: Install dependencies
-    run: yarn install
+      run: yarn install
 
-    # Step 4: Build the React App
     - name: Build React App
-    run: yarn build
+      run: yarn build
 
-    # Step 5: Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
-    uses: peaceiris/actions-gh-pages@v3
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish-dir: ./build
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
