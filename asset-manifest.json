@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/docker_test/static/css/main.ea0cb664.css",
-    "main.js": "/docker_test/static/js/main.b6846042.js",
+    "main.js": "/docker_test/static/js/main.154b1072.js",
     "index.html": "/docker_test/index.html",
     "main.ea0cb664.css.map": "/docker_test/static/css/main.ea0cb664.css.map",
-    "main.b6846042.js.map": "/docker_test/static/js/main.b6846042.js.map"
+    "main.154b1072.js.map": "/docker_test/static/js/main.154b1072.js.map"
   },
   "entrypoints": [
     "static/css/main.ea0cb664.css",
-    "static/js/main.b6846042.js"
+    "static/js/main.154b1072.js"
   ]
 }
