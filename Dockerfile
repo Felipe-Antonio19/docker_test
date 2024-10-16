@@ -1,5 +1,5 @@
 # build react app
-FROM node:18-alpine AS build
+FROM node:16 AS build
 
 # Set working directory
 WORKDIR /app
